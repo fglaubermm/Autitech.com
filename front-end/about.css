@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+}
+
+
+
+.autitech {
+    max-width: 800px;
+    /* controla a largura do texto */
+    margin: 60px auto;
+    /* centraliza na tela */
+    text-align: center;
+    /* centraliza o texto dentro */
+    line-height: 1.6;
+
+}
+
+.equipe {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    /* importante pra responsividade */
+}
+
+
+.card-membro {
+    display: flex;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    /* garante borda certinha */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 300px;
+    align-items: center;
+}
+
+/* imagem lado esquerdo */
+.card-membro img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.card-membro:hover {
+    transform: scale(1.02);
+    transition: 0.3s;
+}
+
+/* lado direito */
+.info {
+    padding: 10px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.info h3 {
+    font-size: 16px;
+    margin: 0;
+}
+
+.info p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+/* botão linkedin */
+.btn-linkedin {
+    align-self: flex-start;
+    background: #0077B5;
+    color: white;
+    padding: 5px 8px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 12px;
+    transition: 0.3s;
+}
+
+.btn-linkedin:hover {
+    background: #005582;
+}
+
+
+
+
+.mvv-section {
+    padding: 60px 20px;
+    text-align: center;
+    color: white;
+    background: #ffffff05;
+    /* leve contraste */
+    border-radius: 10px;
+    margin: 40px 0;
+}
+
+.containermvv {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.mvv {
+    background: #ffffff10;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+}
