@@ -4,22 +4,21 @@ const servicos = [
         titulo: "Desenvolvimento Web",
         desc: "Sites modernos com a sua personalização",
         texto: "Criamos sites profissionais para fortalecer sua presença digital.",
-        img: "img1.png"
+        img: "#"
     },
     {
         categoria: "dev",
         titulo: "Landing Pages",
         desc: "Páginas focadas em acesso rápido",
         texto: "Desenvolvemos páginas que transformam visitantes em clientes.",
-        img: "img2.png"
+        img: "#"
     },
     {
         categoria: "suporte",
         titulo: "Suporte Técnico",
         desc: "Atendimento e suporte em sistemas",
         texto: "Resolvemos problemas de software, Manutenção, Segurança, Controle de Inventário de equipamentos entre mais serviços, garantindo que sua operação não pare. ",
-        img: "img3.png"
-    },
+img: "#"    },
     {
         categoria: "suporte",
         titulo: "Assistência Técnica",
@@ -32,8 +31,7 @@ const servicos = [
         titulo: "Automação de Processos",
         desc: "Aumente sua eficiência no dia a dia",
         texto: "Automatizamos tarefas repetitivas para aumentar produtividade.",
-        img: "img4.png"
-    },
+img: "#"    },
     {
         categoria: "sustentabilidade",
         titulo: "Coleta de resíduo eletrônico",
