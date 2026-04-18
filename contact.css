@@ -1,0 +1,127 @@
+.contato-section {
+    padding: 60px 20px;
+}
+
+.container-contato {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+/* ESQUERDA */
+.contato-info {
+    flex: 1;
+}
+
+.contato-info h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.sub {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.mini {
+    font-size: 0.85rem;
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+/* BOTÕES */
+.btn {
+    display: block;
+    text-align: center;
+    padding: 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.03);
+    opacity: 0.9;
+}
+
+/* destaque */
+.destaque {
+    margin: 20px 0;
+    font-size: 1.05rem;
+    border-radius: 30px;
+}
+
+/* cores */
+.whatsapp {
+    background: #25D366;
+}
+
+.email {
+    background: #007BFF;
+}
+
+.instagram {
+    background: #E4405F;
+}
+
+.linkedin {
+    background: #0077B5;
+}
+
+/* outros contatos */
+.outros-contatos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* DIREITA */
+.contato-form {
+    flex: 1;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: #ffffff10;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+input,
+textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    background: #25D366;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    transform: scale(1.03);
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    .container-contato {
+        flex-direction: column;
+    }
+
+    .contato-info,
+    .contato-form {
+        width: 100%;
+    }
+}

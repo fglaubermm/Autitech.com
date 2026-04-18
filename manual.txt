@@ -1,0 +1,21 @@
+alt+z para alinhas todas as linhas
+
+REGRA CSS:
+se da pra usar em mais de uma tela: CSS GLOBAL
+se é algo pontual: CSS EXCLUSIVO
+
+
+beleza,
+para linkar o css no html, deve se fazer o seguinte:
+<link rel="stylesheet" href="estilo.css"> - adicionar isso no
+
+
+#methods - para informações e formulários
+method = get - INFORMAÇÕES MENOS SENSÍVEIS
+method = post - INFORMAÇÕES MAIS CONFIDENCIAS
+
+
+
+quando for fazer a paarte para celular -
+colocar @media primeiro, pq o navegador lê o código de cima para baixo
+IMPORTANTE - usar flex-direction: column; (vc ta usando mobule né porra, nem sempre da pra colocar side by side)

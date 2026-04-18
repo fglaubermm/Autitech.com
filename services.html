@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutiTech: Nossos Serviços
+    </title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="services.css">
+    </link>
+    <link rel="stylesheet" href="autitechespecíficos.css">
+    </link>
+    <link rel="icon" type="image/x-icon" href="atfavicon.png">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+
+                <a href="index.html" class="logo">
+                    <img src="autitechlogo.png" alt="Logo">
+                </a>
+
+                <ul class="nav-menu">
+                    <li><a href="services.html">Serviços</a></li>
+                    <li><a href="about.html">Quem somos</a></li>
+                    <li><a href="contact.html">Contato</a></li>
+                    <li><a href="sustentabilidade.html">Sustentabilidade</a></li>
+                </ul>
+
+            </div>
+        </nav>
+
+    </header>
+
+
+
+
+
+
+
+
+
+
+    <main>
+
+        <section class="servicos">
+
+            <h1>Qual solução melhor te atende?</h1>
+            <p class="sub">Selecione uma categoria para encontrar o serviço ideal</p>
+
+            <!-- CATEGORIAS -->
+            <div class="categorias">
+                <button onclick="filtrar('dev')">🌐 Desenvolvimento</button>
+                <button onclick="filtrar('suporte')">🛠️ Suporte</button>
+                <button onclick="filtrar('automacao')">⚙️ Automação</button>
+                <button onclick="filtrar('sustentabilidade')">♻️ Sustentabilidade</button>
+            </div>
+
+            <!-- LISTA DINÂMICA -->
+            <div id="lista-servicos" class="lista-servicos"></div>
+
+        </section>
+
+        <!-- MODAL -->
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <span class="fechar" onclick="fecharModal()">✖</span>
+
+                <h2 id="modal-titulo"></h2>
+                <img id="modal-img" src="" alt="">
+                <p id="modal-texto"></p>
+
+                <a id="modal-btn" target="_blank" class="btn whatsapp">
+                    Solicitar orçamento
+                </a>
+
+            </div>
+        </div>
+
+    </main>
+
+
+
+
+    <footer class="footer">
+        <div class="footer-container">
+
+            <div class="footer-info">
+                <p>
+                    AutiTech Soluções Tecnológicas ©<br>
+                    CNPJ: 852.852.852/85<br>
+                    Todos os direitos reservados.
+                </p>
+            </div>
+
+            <div class="footer-menu">
+                <h4>Institucional</h4>
+                <ul>
+                    <li><a href="sustentabilidade.html">Sustentabilidade</a></li>
+                    <li><a href="services.html">Serviços</a></li>
+                    <li><a href="about.html">Sobre nós</a></li>
+                    <li><a href="contact.html">Fale conosco</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="services.js"></script>
+</body>
+
+</html>
