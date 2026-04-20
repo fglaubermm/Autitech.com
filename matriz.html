@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Matriz GUT - AutiTech</title>
+    <link rel="stylesheet" href="matriz.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="atfavicon.png">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+
+                <a href="index.html" class="logo">
+                    <img src="autitechlogo.png" alt="Logo">
+                </a>
+
+                <ul class="nav-menu">
+                    <li><a href="services.html">Serviços</a></li>
+                    <li><a href="about.html">Quem somos</a></li>
+                    <li><a href="contact.html">Contato</a></li>
+                    <li><a href="sustentabilidade.html">Sustentabilidade</a></li>
+                </ul>
+
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+        <div class="gut">
+
+            <h1> Matriz GUT</h1>
+
+            <p class="intro">
+                Um jeito simples de decidir o que vem primeiro sem achismo.
+                <br>
+                Quando você tem várias tarefas ou problemas ao mesmo tempo, ela ajuda a priorizar sem “achismo”.
+            </p>
+
+            <div class="gut-bloco">
+                <h2>Como funciona</h2>
+                <ul>
+                    <li><strong>G — Gravidade:</strong> impacto do problema</li>
+                    <li><strong>U — Urgência:</strong> tempo para agir</li>
+                    <li><strong>T — Tendência:</strong> chance de piorar</li>
+                </ul>
+            </div>
+
+            <div class="gut-bloco destaque">
+                <h2>Fórmula para cálculo</h2>
+                <p><strong>GUT = Gravidade × Urgência × Tendência</strong></p>
+            </div>
+
+            <div class="gut-bloco">
+                <h2>Passo a passo</h2>
+                <ol>
+                    <li>Liste suas tarefas</li>
+                    <li>Dê notas de 1 a 5</li>
+                    <li>Os valores serão multiplicados automaticamente</li>
+                    <li>Priorize o maior resultado</li>
+                </ol>
+            </div>
+
+        </div>
+        <h1>Matriz de Prioridades</h1>
+
+        <div class="form">
+            <input type="text" id="problema" placeholder="Descreva o problema">
+
+            <input type="number" id="gravidade" placeholder="Gravidade (1-5)">
+            <input type="number" id="urgencia" placeholder="Urgência (1-5)">
+            <input type="number" id="tendencia" placeholder="Tendência (1-5)">
+
+            <button onclick="adicionarItem()">Adicionar</button>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Situação</th>
+                    <th>G</th>
+                    <th>U</th>
+                    <th>T</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody id="lista"></tbody>
+        </table>
+
+        <br>
+        <button onclick="gerarMatriz()">Gerar Matriz</button>
+
+        <div class="matriz">
+
+            <div class="box verde" id="ui">
+                <h3>Urgente e Importante</h3>
+            </div>
+
+            <div class="box amarelo" id="inu">
+                <h3>Importante e Não Urgente</h3>
+            </div>
+
+            <div class="box azul" id="uni">
+                <h3>Urgente e Não Importante</h3>
+            </div>
+
+            <div class="box vermelho" id="nuni">
+                <h3>Não urgente e Não importante</h3>
+            </div>
+
+        </div>
+        <br>
+
+        <div id="toast" class="toast">Matriz gerada com sucesso 🚀</div>
+    </main>
+
+
+
+    <footer class="footer">
+        <div class="footer-container">
+
+            <div class="footer-info">
+                <p>
+                    AutiTech Soluções Tecnológicas ©<br>
+                    Todos os direitos reservados.
+                </p>
+            </div>
+
+            <div class="footer-menu">
+                <h4>Institucional</h4>
+                <ul>
+                    <li><a href="sustentabilidade.html">Sustentabilidade</a></li>
+
+                    <li><a href="services.html">Serviços</a></li>
+                    <li><a href="about.html">Sobre nós</a></li>
+                    <li><a href="contact.html">Fale conosco</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <script src="matriz.js"></script>
+</body>
+
+</html>
